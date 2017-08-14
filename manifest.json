@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Kibana Css Fixer",
+  "description": "kibana autocomplete css fix",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+    "js": [ "background.js" ],
+    "matches": [ "http://*/*", "https://*/*" ]
+  }],
+  "permissions": [ "http://*/*", "https://*/*" ]
+}
